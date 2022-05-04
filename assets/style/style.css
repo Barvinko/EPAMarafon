@@ -140,7 +140,6 @@ body {
 
     .nav-menu-wrapper-activ{
         background-color: rgba(7, 7, 29, 0.833);
-        padding: 7px;
         text-align: center;
         position: absolute;
         top: 10px;
@@ -151,14 +150,16 @@ body {
 
     .nav-menu-wrapper-activ li{
         display: block;
+        border-bottom: 1px solid var(--main-text-color);
+        padding: 5px 10px;
+    }
+
+    .nav-menu-wrapper-activ  li:last-child{
+        border: 0;
     }
 
     .nav-menu-wrapper-activ .nav-menu-item{
-        border-bottom: 1px solid var(--main-text-color);
-        margin-bottom: 2px;
-        padding: 0;
         list-style: none;
-        margin-top: 5px;
     }
 
     .registration-form-image{

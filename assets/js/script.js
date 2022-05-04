@@ -30,19 +30,10 @@ selectEl.addEventListener('change', function() {
         break;
         case this.value === 'earth' : registrationImage.src = "./assets/pictures/Earth.png";
         break;
-        default: setSneakyRicardo(this); 
+        default: break; 
     }
 
 })
-
-function setSneakyRicardo (elem) {
-    registrationImage.src = "./Assets/Ricardo.png";
-    registrationImage.style.transform = "scale(-1,1)";
-    textToChange.innerText = "запису на танці";
-    labels[2].innerText = "Хореограф";
-    options[elem.selectedIndex].innerText = "Рікардо Мілос";
-    document.body.style.backgroundImage = "url(./Assets/DiscoHall.jpg)"
-}
 
 button.addEventListener('click', function() {
     console.log(this.className);
