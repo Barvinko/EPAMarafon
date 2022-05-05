@@ -138,8 +138,9 @@ body {
 
 @media (max-width: 768px) {
 
-    body{
-        overflow: hidden;
+    .wrapper{
+        overflow-x: hidden;
+        position: relative;
     }
 
     .nav-menu-wrapper-activ{

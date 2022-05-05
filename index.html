@@ -11,75 +11,77 @@
 </head>
 
 <body class="d-flex flex-column">
-    <header class="header">
-        <nav class="nav-bar secondary-text">
-            <div class="nav-bar-wrapper">
-                <div class="nav-logo-wrapper d-flex">
-                    <i class="nav-logo"></i>
-                    <span class="nav-title">My Space</span>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav-bar secondary-text">
+                <div class="nav-bar-wrapper">
+                    <div class="nav-logo-wrapper d-flex">
+                        <i class="nav-logo"></i>
+                        <span class="nav-title">My Space</span>
+                    </div>
+
+                    <div class="nav-menu-wrapper">
+                        <ul class="mb-1">
+                            <li><span class="nav-menu-item">Про нас</span></li>
+                            <li><span class="nav-menu-item">Новини</span></li>
+                            <li><span class="nav-menu-item pe-4">Блог</span></li>
+                            <li><i class="nav-menu-icon"></i></li>
+                        </ul>
+                    </div>
+                    <div class="menu-button"></div>
                 </div>
+            </nav>
+        </header>
+        <main class="page-wrapper flex-grow-1 d-flex flex-column justify-content-center">
+            <section class="registration-section">
+                <div class="registration-form-wrapper">
+                    <div class="registration-form-image-wrapper">
+                        <img class="registration-form-image" id="planet-img" src="./assets/pictures/Uran.svg" alt="planet-img">
+                    </div>
 
-                <div class="nav-menu-wrapper">
-                    <ul class="mb-1">
-                        <li><span class="nav-menu-item">Про нас</span></li>
-                        <li><span class="nav-menu-item">Новини</span></li>
-                        <li><span class="nav-menu-item pe-4">Блог</span></li>
-                        <li><i class="nav-menu-icon"></i></li>
-                    </ul>
+                    <div class="form-card flex-column">
+                        <div class="form-wrapper p-4">
+
+                            <h2 class="form-title">Електронна черга для
+                            <span id="text-to-change"> польоту у космос</span></h2>
+
+                            <form class="registration-form " action="submit">
+
+
+                                <label class="form-label" for="name">Імʼя</label>
+                                <input class="form-control form-input" type="text" id="name" name="name" placeholder="Введіть імʼя" required>
+
+                                
+
+                                <label class="form-label" for="phone" required>Телефон</label>
+                                <input class="form-control form-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+38 (___) __ __ ___" required>
+
+
+
+                                <label class="form-label" for="select">Планета</label>
+                                <select class="form-select form-input form-input-select"name="" id="select" required>
+                                    <option value="venus">Венера</option>
+                                    <option value="earth">Земля</option>
+                                    <option value="mars">Марс</option>
+                                    <option value="mercury">Меркурій</option>
+                                    <option value="neptune">Нептун</option>
+                                    <option value="uranus" selected>Уран</option>
+                                </select>
+
+
+                                <button class="btn btn-primary form-submit-button" type="submit" >Зареєструватися</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="menu-button"></div>
-            </div>
-        </nav>
-    </header>
-<main class="page-wrapper flex-grow-1 d-flex flex-column justify-content-center">
-    <section class="registration-section">
-        <div class="registration-form-wrapper">
-            <div class="registration-form-image-wrapper">
-                <img class="registration-form-image" id="planet-img" src="./assets/pictures/Uran.svg" alt="planet-img">
-            </div>
-
-            <div class="form-card flex-column">
-                <div class="form-wrapper p-4">
-
-                    <h2 class="form-title">Електронна черга для
-                       <span id="text-to-change"> польоту у космос</span></h2>
-
-                    <form class="registration-form " action="submit">
-
-
-                        <label class="form-label" for="name">Імʼя</label>
-                        <input class="form-control form-input" type="text" id="name" name="name" placeholder="Введіть імʼя" required>
-
-                        
-
-                        <label class="form-label" for="phone" required>Телефон</label>
-                        <input class="form-control form-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+38 (___) __ __ ___" required>
-
-
-
-                        <label class="form-label" for="select">Планета</label>
-                        <select class="form-select form-input form-input-select"name="" id="select" required>
-                            <option value="venus">Венера</option>
-                            <option value="earth">Земля</option>
-                            <option value="mars">Марс</option>
-                            <option value="mercury">Меркурій</option>
-                            <option value="neptune">Нептун</option>
-                            <option value="uranus" selected>Уран</option>
-                        </select>
-
-
-                        <button class="btn btn-primary form-submit-button" type="submit" >Зареєструватися</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-<footer class="footer secondary-text">
-    <span class="footer-credentials">
-        © 2022 My Space. Всі права захищені.
-    </span>
-</footer>
+            </section>
+        </main>
+        <footer class="footer secondary-text">
+            <span class="footer-credentials">
+                © 2022 My Space. Всі права захищені.
+            </span>
+        </footer>
+    </div>
 
 
 </body>
