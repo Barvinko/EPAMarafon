@@ -1,0 +1,22 @@
+{
+  "name": "epamarafon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barvinko/EPAMarafon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barvinko/EPAMarafon/issues"
+  },
+  "homepage": "https://github.com/Barvinko/EPAMarafon#readme",
+  "dependencies": {
+    "express": "^4.17.0"
+  }
+}
