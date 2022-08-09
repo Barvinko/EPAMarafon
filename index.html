@@ -45,7 +45,7 @@
                             <h2 class="form-title">Електронна черга для
                             <span id="text-to-change"> польоту у космос</span></h2>
 
-                            <form class="registration-form " action="submit">
+                            <form name="signUp" metod ="post" class="registration-form " action="submit">
 
 
                                 <label class="form-label" for="name">Імʼя</label>
@@ -54,12 +54,13 @@
                                 
 
                                 <label class="form-label" for="phone" required>Телефон</label>
-                                <input class="form-control form-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+38 (___) __ __ ___" required>
+                                <!-- <input class="form-control form-input" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+38 (___) __ __ ___" required> -->
+                                <input class="form-control form-input" type="tel" id="phone" name="phone" placeholder="+38 (___) __ __ ___" required>
 
 
 
                                 <label class="form-label" for="select">Планета</label>
-                                <select class="form-select form-input form-input-select"name="" id="select" required>
+                                <select class="form-select form-input form-input-select" name="planet" id="select" required>
                                     <option value="venus">Венера</option>
                                     <option value="earth">Земля</option>
                                     <option value="mars">Марс</option>
@@ -69,8 +70,8 @@
                                 </select>
 
 
-                                <button class="btn btn-primary form-submit-button" type="submit" >Зареєструватися</button>
-                            </form>
+                                <button class="btn btn-primary form-submit-button" type="submit" id="submit">Зареєструватися</button>
+                            </form> 
                         </div>
                     </div>
                 </div>
